@@ -9,7 +9,7 @@ def valid_move?(board, index)
 end
 
 def position_taken?(board, index)
-  if board.include?(index) && index.between?(0, 8)
+  if board[index] == "X" || board[index] == "O"
     return true
   else
     return false
